@@ -13,12 +13,11 @@ kotlin {
     explicitApi()
 
     jvm()
-    androidLibrary {
+    android {
         namespace = "io.github.dnedrow.lorem"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
 
-        withHostTestBuilder {}.configure {}
 
         compilerOptions {
             jvmTarget = JvmTarget.JVM_11
