@@ -310,7 +310,7 @@ Generator instances SHALL be independent and SHALL NOT share mutable global stat
 
 ### Requirement: Multiplatform target coverage
 
-The library SHALL publish artifacts for the JVM, Android, `iosArm64`, `iosSimulatorArm64`, `iosX64`, `linuxX64`, and `wasmJs` targets. All behavior SHALL be implemented in the common source set with no platform-specific declarations, so that every target exhibits identical behavior. The library SHALL declare no runtime dependencies beyond the Kotlin standard library. The public API SHALL be explicit, with every public declaration carrying an explicit visibility modifier and return type.
+The library SHALL publish artifacts for the JVM, Android, `iosArm64`, and `iosSimulatorArm64` targets. All behavior SHALL be implemented in the common source set with no platform-specific declarations, so that every target exhibits identical behavior. The library SHALL declare no runtime dependencies beyond the Kotlin standard library. The public API SHALL be explicit, with every public declaration carrying an explicit visibility modifier and return type.
 
 #### Scenario: Every target builds and passes the same tests
 

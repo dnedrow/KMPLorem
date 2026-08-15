@@ -133,7 +133,7 @@ try {
 
 ## Supported targets
 
-`jvm`, `androidTarget`, `iosArm64`, `iosSimulatorArm64`, `iosX64`, `linuxX64`, and `wasmJs`.
+`jvm`, `androidTarget`, `iosArm64`, `iosSimulatorArm64`.
 
 The library is written entirely in `commonMain` — there is no `expect`/`actual` declaration and no platform-specific source set. Whitespace splitting and letter casing are hand-rolled rather than built on `Regex`, whose character classes differ between the JVM, JavaScript, Wasm, and Native, so a given seed produces identical output everywhere.
 

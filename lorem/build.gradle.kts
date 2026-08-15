@@ -26,17 +26,6 @@ kotlin {
     }
     iosArm64()
     iosSimulatorArm64()
-    iosX64()
-    linuxX64()
-    wasmJs {
-        nodejs()
-        browser {
-            // The browser environment stays declared for consumers, but its Karma test task is
-            // off: it needs a local Chrome install, and the library has no DOM interaction, so
-            // `wasmJsNodeTest` already exercises the same common code on the same Wasm backend.
-            testTask { enabled = false }
-        }
-    }
 
     sourceSets {
         commonTest.dependencies {
